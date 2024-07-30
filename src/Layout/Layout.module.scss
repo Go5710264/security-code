@@ -1,0 +1,28 @@
+.containerBox {
+  width: 1230px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include nlg {
+    width: 1023px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @include nmd {
+    width: 708px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include nsm {
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  &__flex{
+    display: flex;
+  }
+}
+
+.mainContent{
+    width: 70%;
+}

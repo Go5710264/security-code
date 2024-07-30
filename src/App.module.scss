@@ -1,0 +1,16 @@
+.section {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 900px;
+  margin: auto;
+  font-family: Montserrat, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  color: #181818;
+
+  @include nsm {
+    min-height: unset;
+  }
+}
