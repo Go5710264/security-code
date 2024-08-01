@@ -20,7 +20,7 @@ export const configureStore = () => {
             это employeeReducer)  
         */
         combineReducers({ 
-            employee: employeeReducer,
+            employees: employeeReducer,
         }),
 
         compose(

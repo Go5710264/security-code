@@ -1,10 +1,22 @@
-import {CHANGE_INFORMATION, SET_EMPLOYEE_DATA} from './actions';
+import {CHANGE_EMAIL} from './action';
+import * as employes from './employees.json'
 
-const initialState = {
-    _id: "1a",
-    age: 23,
-    email: "noName@noemail.com",
-    name: "No Name"
+// console.log(JSON.parse(JSON.stringify(employes)))
+
+
+
+const initialState = JSON.parse(JSON.stringify(employes));
+
+const employeeReducer = (state = initialState, action: unknown)=> {
+    switch (action.type){
+        case CHANGE_EMAIL:
+            return {
+                ...state,
+                email: action.payload,
+            }
+        default:
+            return state;
+    }
 };
 
-const employeeReducer = (state=initialState)
+export default employeeReducer;
