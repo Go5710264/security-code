@@ -7,7 +7,6 @@ import { EmployeeItem } from "./EmployeeItem/EmployeeItem";
 export const Sidebar = ({...props}) => {
     const dispatch = useDispatch();
     const employees = useSelector((state: IEmployees) => state.employees.default); 
-    // mainInfo
     return (
         <aside {...props} className={style.hierarchicalTree}>
             <ul>
